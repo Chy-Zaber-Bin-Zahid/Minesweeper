@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+.body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-body {
+  border: 3px solid rgb(197, 197, 197);
+  width: 30rem;
+}
+
+.top-part {
+  border: 3px solid gray;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.two-p {
+  border: 2px solid rgb(189, 189, 189);
+  background-color: rgb(215, 216, 218);
+  padding: 0.3rem 1rem;
+  font-size: 1.4rem;
+  transition: 0.3s all;
+}
+
+.flag {
+  padding: 0.3rem 1rem;
+}
+
+.smile {
+  text-decoration: none;
+}
+
+.num {
+  color: red;
+  font-weight: bold;
+}
+
+.flag:hover,
+.smile:hover {
+  cursor: pointer;
+  background-color: rgb(204, 204, 206);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.1rem;
+  padding: 0.1rem;
+  background-color: rgb(238, 236, 236);
+  position: relative;
+}
+
+.bot-p p {
+  border: 1px solid rgb(209, 209, 209);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.6rem;
+  background-color: rgb(196, 195, 195);
+  transition: 0.3s all;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: blue;
+}
+
+.bot-p p:hover {
+  cursor: pointer;
+  background-color: rgb(177, 177, 177);
+}
+
+.vic {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(29, 161, 201, 0.514);
+  visibility: hidden;
+}
+
+.vic-h1{
+  background-color: rgb(255, 255, 255);
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.vic-a {
+  text-decoration: none;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  transition: 0.5s all;
+}
+
+.vic-a:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.hide {
+  visibility: hidden;
+  /* display: none; */
+}
